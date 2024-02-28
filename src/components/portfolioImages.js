@@ -1,4 +1,4 @@
-export const portfolioImages = [
+export const portfolioImagesSansIndex = [
   {
     src: '/assets/16by9.jpg',
     loading: 'lazy',
@@ -140,5 +140,14 @@ export const portfolioImages = [
     alt: 'Des Moines, Window View',
   },
 ]
+
+export const portfolioImages = portfolioImagesSansIndex.map((image, index) => {
+  return {
+    src: image.src,
+    loading: image.loading,
+    alt: image.alt,
+    index: index + 1,
+  }
+})
 
 console.log(portfolioImages)
