@@ -2,7 +2,7 @@ import { portfolioImages } from './portfolioImages'
 const ImageGallery = ({ orientation }) => {
   return (
     <div>
-      <div className="max-w-4xl grid grid-cols-3 gap-4">
+      <div className="max-w-4xl grid grid-cols-3 mb-4 md:px-4 md:gap-4 gap-1">
         {portfolioImages.map((image, index) => {
           return (
             <div className="relative w-full" key={`sideimage-${index}`}>
