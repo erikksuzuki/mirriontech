@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import ImageGallery from './components/ImageGallery'
+import ImageModal from './components/ImageModal'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1 className="my-6 text-capitalize">Past Projects</h1>
+        <div className="">
+          <ImageGallery />
+        </div>
+
+        <div className="overflow-hidden w-[1px] h-[1px]">
+          <ImageModal />
+        </div>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
